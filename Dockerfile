@@ -7,7 +7,7 @@ RUN go mod download
 
 COPY . /app
 
-RUN CGO_ENABLED=0 GOOS=linux go build main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -o main
 
 EXPOSE 80
 
